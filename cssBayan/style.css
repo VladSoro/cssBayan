@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4d4747;
+    font-family: 'Arial', sans-serif;
+    color: whitesmoke;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tab input,
+.faq-body {
+    display: none;
+}
+
+.faq-item {
+    background: white;
+    color: #4d4747;
+    margin-bottom: 1rem;
+}
+
+
+.faq-item input {
+    visibility: hidden;
+    display: block;
+    height: 0;
+    margin: 0;
+  }
+
+
+  .faq-item label {
+    cursor: default;
+    border: 0.05em solid rgb(255 255 255 / 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.625em;
+    font-size: 0.8em;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+  }
+
+  .accordion .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #88b8ff;
+    font-weight: bold;
+  }
