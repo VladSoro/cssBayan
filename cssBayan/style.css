@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: #4d4747;
     font-family: 'Arial', sans-serif;
@@ -9,11 +5,9 @@ body {
 }
 
 .wrapper {
-    width: 100%;
     margin: 0 auto;
     padding: 0;
 }
-
 
 /*size*/
 @media (min-width: 320px) {
@@ -23,6 +17,8 @@ body {
   
     .wrapper label {
       font-size: 1em;
+      cursor: pointer;
+      background-color: #337AB7;
     }
   
     .wrapper-name {
@@ -30,18 +26,18 @@ body {
     }
   }
   
-  
+
   @media (min-width: 820px) {
     .wrapper {
-      width: 70%;
+      width: 60%;
     }
   
     .wrapper label {
-      font-size: 1.4em;
+      font-size: 1.3em;
     }
   
     .wrapper-name {
-      font-size: 1.8em;
+      font-size: 1.9em;
     }
   }
   
@@ -65,7 +61,6 @@ body {
     margin-bottom: 1rem;
 }
 
-
 .wrapper input {
     visibility: hidden;
     display: block;
@@ -73,15 +68,13 @@ body {
     margin: 0;
   }
 
-
   .wrapper label {
     cursor: default;
-    border: 0.05em solid rgb(255 255 255 / 10%);
+    border: 0.05em solid rgba(180, 108, 108, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0.625em;
-    font-size: 0.8em;
+    padding: 0.625em;;
     width: 100%;
     box-sizing: border-box;
     z-index: 100;
@@ -100,22 +93,22 @@ body {
     height: 1.5em;
     width: 1.5em;
     opacity: 1;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
   }
 
   .wrapper .faq-body {
     margin: 0 auto;
     height: 0;
-    padding: 0 0.625em;
+    padding: 0 0.650em;
     box-sizing: border-box;
     text-align: center;
-    transition: 0.5s;
+    transition: 1s;
   }
 
   .faq-body{
     height: 0;
     overflow: hidden;
-    transition: height 0.5s;
+    transition: height 1s;
   }
 
   .accordion img {
@@ -124,13 +117,11 @@ body {
     transition: all 0.5s ease-in-out;
   }
 
-
-
   /*sdwsdw*/
   .wrapper input:checked+label {
-    padding-bottom: 1.25em;
-    background: linear-gradient(rgb(0 48 255 / 0%) 0%, rgb(61 65 102 / 38%) 100%);
-    filter: drop-shadow(1px 1px 200px #747ef1);
+    padding-bottom: 1.3em;
+    background: linear-gradient(rgba(55, 69, 130, 0) 0%, rgb(61 65 102 / 38%) 100%);
+    filter: drop-shadow(1px 1px 200px #494a5b);
   }
   
   .wrapper input:checked~label .faq-body {
@@ -144,6 +135,7 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7' /%3E%3C/svg%3E");
     transform: rotate(-180deg);
     transition: all 0.5s ease-in-out;
+    color: #4d4747;
   }
   
   .wrapper input:checked+label .faq-header {
@@ -152,7 +144,7 @@ body {
 
 @media (hover: hover) {
 
-  /* Hover Effects */
+  /*hover */
   .wrapper label {
     cursor: pointer;
   }
@@ -189,8 +181,7 @@ body {
   }
 
   .wrapper:hover .faq-item:hover input:active+label .faq-body {
-    opacity: 0.5;
-    /* background: linear-gradient(rgb(0 48 255 / 0%) 0%, rgb(61 65 102 / 38%) 100%); */
+    opacity: 1;
     filter: drop-shadow(10px 10px 50px #97a0ff);
   }
 
